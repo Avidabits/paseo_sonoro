@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:georss="http://www.georss.org/georss" xmlns:notours="http://www.escoitar.org/notours">
+	<channel>
+		<title>Viavélez</title>
+		<link>http://www.editor.notours.org/projects/1772/</link>
+		<description>Un paseo por la memoria de la vida y el trabajo en el puerto de Viavélez. </description>
+		<language>es</language>
+		<georss:relationshiptag>is-centered-at</georss:relationshiptag>
+		<georss:point>43.5637236 -6.8340881</georss:point>
+		<notours:sticky>1</notours:sticky>
+		<item>
+			<guid isPermaLink="false">22352</guid>
+			<title>nutrias llamando</title>
+			<description>En las noches de verano las nutrias bajan al puerto con frecuencia</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/016_nutrias_llamando.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:41</pubDate>
+			<georss:circle>43.562975276941 -6.8407429219818 13.46</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/016_nutrias_llamando.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22955</guid>
+			<title>niño rico, niño p...</title>
+			<description>Hubo un tiempo en que la enseñanza no era igual para todos...</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/017_antonia_escuelas.mp3" length="0" type="" />
+			<pubDate>2016-05-05 08:04:16</pubDate>
+			<georss:circle>43.564306678606 -6.834345660852 37.94</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/017_antonia_escuelas.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22824</guid>
+			<title>curas y maestros </title>
+			<description>Curas y maestros eran todos unos.....</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/018_curas_y_maestros.mp3" length="0" type="" />
+			<pubDate>2016-05-05 07:58:29</pubDate>
+			<georss:circle>43.562865974847 -6.838929143547 27.54</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>stopout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/018_curas_y_maestros.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22825</guid>
+			<title>Pal caridexo.....</title>
+			<description>habia rivalidad</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/019_caridexo_cago_y_m.mp3" length="0" type="" />
+			<pubDate>2016-04-11 13:31:43</pubDate>
+			<georss:circle>43.557581152583 -6.8330899745216 62.42</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>stopout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/019_caridexo_cago_y_m.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22796</guid>
+			<title>el erizo al calde...</title>
+			<description>en enero el erizo al caldero</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/015_en_enero_erizo_al.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:40</pubDate>
+			<georss:circle>43.562520456598 -6.8389859447747 8.93</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout fadein</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/015_en_enero_erizo_al.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22797</guid>
+			<title>hacer cuerdas</title>
+			<description>Cuando necesitamos cuerda, nos la hacemos</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/014_hacer_cuerda.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:40</pubDate>
+			<georss:circle>43.563045202841 -6.8397717957008 12.91</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/014_hacer_cuerda.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22798</guid>
+			<title>hacer nasas</title>
+			<description>Como se hacían las nasas</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/013_hacer_nasas.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:40</pubDate>
+			<georss:circle>43.564133619556 -6.8408554886382 20.6</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/013_hacer_nasas.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22799</guid>
+			<title>Encascar o aparel...</title>
+			<description>Proceso de encascar los aparejos para darles durabilidad y resistencia</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/012_encascar_o_aparel.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:40</pubDate>
+			<georss:circle>43.563721548332 -6.8377386637543 16.8</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/012_encascar_o_aparel.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22800</guid>
+			<title>Espallar o aparel...</title>
+			<description>Espallar o aparello, a la vuelta del mar hay que ordenar y arreglar las reds.</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/011_espallar_aparejos.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:39</pubDate>
+			<georss:circle>43.564020854458 -6.8375509091233 17.16</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/011_espallar_aparejos.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22801</guid>
+			<title>Cuando se hizo el...</title>
+			<description>Labores relacionadas con el palacio y su construcción</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/010_se_hizo_el_palaci.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:39</pubDate>
+			<georss:circle>43.56139699071 -6.8344770631988 79.26</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/010_se_hizo_el_palaci.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22802</guid>
+			<title>Siempre había cul...</title>
+			<description>Cuando iban a lavar siempre había culebras y lagartos, no escolanzos, no, culebras...</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/009_habia_culebras.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:39</pubDate>
+			<georss:circle>43.562703035631 -6.8366012782959 49.24</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/009_habia_culebras.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22803</guid>
+			<title>La colada</title>
+			<description>Habia que colar la ropa porque se mezclaba con cenizas para blanquear</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/008_la_colada.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:38</pubDate>
+			<georss:circle>43.562671840856 -6.8382910276474 27.1</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/008_la_colada.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22804</guid>
+			<title>Fuente de la ribe...</title>
+			<description>Iban a por agua a la fuente de la ribeira, no tenía caño y habia que llenar los calderos con un cazo, se tardaba mucho</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/007_fuente_ribeira.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:38</pubDate>
+			<georss:circle>43.562508546219 -6.8409141685395 19.68</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/007_fuente_ribeira.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22805</guid>
+			<title>Ouca en porticel</title>
+			<description>Si se cogia liquen se vendia seco, si se cogia ouca podía usarse para abonar o quemarla y vender las cenizas.</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/006_ouca_en_porticel.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:32</pubDate>
+			<georss:circle>43.565734763961 -6.8362042012971 78.67</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/006_ouca_en_porticel.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22806</guid>
+			<title>La filazón</title>
+			<description>La filazon era una reunion de gente que tejía mientras una de las mujeres se turnaba para leer novelas para todas.</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/005_la_filazon.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:32</pubDate>
+			<georss:circle>43.562566713823 -6.8402220854584 27.68</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/005_la_filazon.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22807</guid>
+			<title>Niños en el pedre...</title>
+			<description>Los niños iban a trabajar al pedrero recogiendo erizos</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/004_ninos_en_pedrero.mp3" length="0" type="" />
+			<pubDate>2016-04-11 13:24:42</pubDate>
+			<georss:circle>43.565260433222 -6.8337525168886 66.15</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/004_ninos_en_pedrero.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22808</guid>
+			<title>Mama bajaba al pe...</title>
+			<description>Bajar y subir por </description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/003_mama_bajaba_al_pe.mp3" length="0" type="" />
+			<pubDate>2016-04-11 13:26:53</pubDate>
+			<georss:circle>43.56491058875 -6.8350935928681 49.87</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/003_mama_bajaba_al_pe.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22809</guid>
+			<title>Vapor y vela</title>
+			<description>habia barcos de vapor y vela al mismo tiempo</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/002_vapor_y_vela.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:32</pubDate>
+			<georss:circle>43.564179698985 -6.8394493481628 27.43</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/002_vapor_y_vela.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+		<item>
+			<guid isPermaLink="false">22810</guid>
+			<title>La toa</title>
+			<description>Toa: remolque de los barcos de vela o de los que no son capaces de maniobrar dentro del puerto.</description>
+			<enclosure url="http://www.editor.notours.org/projects/1772/sound/001_La_toa.mp3" length="0" type="" />
+			<pubDate>2016-03-31 14:04:31</pubDate>
+			<georss:circle>43.563577199714 -6.840554418277 44.06</georss:circle>
+			<notours:soundpoint>
+				<notours:attributes>pauseout</notours:attributes>
+				<notours:level>0</notours:level>
+				<notours:milestone>0</notours:milestone>
+				<notours:soundsource>
+					<notours:file>/sound/001_La_toa.mp3</notours:file>
+					<notours:volume>100</notours:volume>
+				</notours:soundsource>
+			</notours:soundpoint>
+		</item>
+	</channel>
+</rss>

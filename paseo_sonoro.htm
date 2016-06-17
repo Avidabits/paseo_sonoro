@@ -1,0 +1,212 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <link rel="stylesheet" type="text/css" href="paseo_sonoro.css">
+  <title id="title">Título: descripción</title> <!--esto se sustituye con el título y la descripción de soundscape.rss-->
+  <script src="https://maps.googleapis.com/maps/api/js"> </script>
+  <script src="paseo_sonoro.js"> </script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--para que no escalen los móviles-->
+
+  <script> <!--script de inicializacion de mapas y paseo-->
+    // TODO: el punto central hay que cogerlo del fichero soundscape.rss 'georss:point'
+    var pCentro=null;
+    var map=null;
+    var miPaseo=null; 
+    function loadXMLDoc()
+    {  
+      console.log("entrando en loadXMLDoc");
+      var xhttp = new XMLHttpRequest();
+      xhttp.onreadystatechange = function() {
+        if (xhttp.readyState == 4 && xhttp.status == 200) {
+          miPaseo=construyePaseo(xhttp);
+          pCentro=new google.maps.LatLng(miPaseo.latitud,miPaseo.longitud);
+          map.setCenter(pCentro); 
+          creaBolas();
+          // ya tenemos el paseo creado, usamos el título y la descripción en la interfaz de usuario
+          document.getElementById("title").innerHTML=miPaseo.titulo+": "+miPaseo.descripcion;
+        }//if 
+      };// function onreadystatechange
+      xhttp.open("GET", "soundscape.rss", true);
+      xhttp.send();
+    }// function loadXMLDoc    
+    
+    function initialize()
+    {
+      
+      var mapProp = {
+      //center:pCentro,
+      zoom:15,
+      scaleControl:true,
+      streetViewControl:false,
+      mapTypeId:google.maps.MapTypeId.HYBRID
+      };
+
+      map=new google.maps.Map(document.getElementById("googleMap"),mapProp);
+      google.maps.event.addListener(map, 'click', function(event) {
+         cambiaPosicion(event.latLng.lat(), event.latLng.lng())
+        });
+       
+      loadXMLDoc();   //funcion asincrona, 
+
+      
+    }//function initialize
+
+    google.maps.event.addDomListener(window, 'load', initialize);
+    
+
+    function creaBolas()
+    {               
+          var miBola = new google.maps.Circle({
+          map:map, 
+          center:pCentro,
+          radius:20,
+          strokeOpacity:0,
+          strokeWeight:0,
+          fillColor:"#000088",
+          fillOpacity:0.4}); //new google.maps.Circle
+          miPaseo.bolaPosicionActual=miBola;
+          
+      for (var i = 0; i <miPaseo.listaItems.length; i++) {
+        miBola = new google.maps.Circle({
+          center:new google.maps.LatLng(miPaseo.listaItems[i].latitud,miPaseo.listaItems[i].longitud),
+          radius:miPaseo.listaItems[i].radio,
+          strokeOpacity:0,
+          strokeWeight:0,
+          fillColor:"#0000FF",
+          fillOpacity:0.4
+        }); //new google.maps.Circle
+        
+        google.maps.event.addListener(miBola, 'click', function(event) {
+           cambiaPosicion(event.latLng.lat(), event.latLng.lng())
+        } ); //addListener
+        
+        miBola.setMap(map);
+        miPaseo.listaItems[i].bola=miBola;
+      }//for
+      
+    }// function creaBolas
+    
+    // en esta zona meteremos las funciones de geolocalizacion
+     
+
+  </script>
+  </head>
+
+  <body>
+<table id="tabla">
+  <tr>
+    <td><img class="logo" src="logo_notours_screen.jpg"></td>
+    <!--td><p id="info_precarga">Minimiza el consumo de datos precargando el audio en una zona wifi</p></td-->
+    <!--td><button id="boton" onclick="cargaFicheros()" type="button" class="button">precargar audio</button></td-->
+  </tr>
+</table>      
+    <p id="lineaDepuracion">Información adicional</p>
+    <p id="googleMap"></p>
+  </body>
+  <script> <!-- aqui meteremos el codigo de posicionamiento-->
+    
+    if(navigator.geolocation)
+    {
+    // Se cuenta con el soporte para geolocalización, entonces ...
+    //TODO: REHACER ESTO
+    //setInterval(miraDondeEstamos, 5000); // que cada 5 segundos mire donde estamos
+    }
+    else
+    {
+    // No se cuenta con soporte para geolocalización, manejar la situación.
+    alert("actualiza tu navegador");
+    }
+
+    function onProgreso(numAudiosCargados)
+    {
+      // Indicar el progreso en la interfaz
+      var porcentaje_cargado=100*numAudiosCargados/miPaseo.listaItems.length;
+      document.getElementById("info_precarga").innerHTML=porcentaje.toFixed(2) + "% descargado";
+      // si el numero es igual a numItmes, declarar proceso acabado
+      if (numAudiosCargados==miPaseo.listaItems.length) {
+        document.getElementById("info_precarga").innerHTML="carga finalizada";
+        document.getElementById("tabla").style.display="none";
+      }
+    }
+
+    function cargaFicheros()
+    {
+      cargaAudiosMuteSpeedPlay(miPaseo, onProgreso); //ULTIMA OPORTINIDAD DE CARGAR FICHEROS: NO FUNCIONA
+      // poner indicar de inicio del proceso
+      document.getElementById("info_precarga").innerHTML="Descargando audios...";
+      //esconder el botón
+      document.getElementById("boton").style.display="none";
+
+    }//cargaFicheros
+
+
+    function miraDondeEstamos(){
+    // hace una peticion de leer la nueva posicion
+    navigator.geolocation.getCurrentPosition(onSuccessGeolocating, onErrorGeolocating,  {enableHighAccuracy:true, maximumAge:4000, timeout:4000});
+    }
+
+    function onErrorGeolocating(error)
+    {
+      switch(error.code)
+      {
+        case error.PERMISSION_DENIED:
+        console.error('ERROR: User denied access to track physical position!');
+        break;
+
+        case error.POSITION_UNAVAILABLE:
+        console.error("ERROR: There is a problem getting the position of the device!");
+        break;
+
+        case error.TIMEOUT:
+        console.warn("ERROR: The application timed out trying to get the position of the device!");
+        break;
+
+        default:
+        console.error("ERROR: Unknown problem!");
+        break;
+      }
+    }
+
+    function onSuccessGeolocating(position)
+    {
+
+    var msg;
+    msg="("+position.coords.latitude+","+position.coords.longitude+") - altura:"+position.coords.altitude;
+    document.getElementById("lineaDepuracion").innerHTML =msg;
+    console.log("onSuccessGeolocating: ", msg);
+
+    cambiaPosicion(position.coords.latitude, position.coords.longitude);
+    }
+
+    function cambiaPosicion(latitud, longitud)
+    {
+    // ¿estamos dentro de algún circulo?
+    // si estamos dentro , decir cual....
+    for (var i = 0; i <miPaseo.listaItems.length; i++) {
+        if (puntoEnCirculo(latitud, longitud, miPaseo.listaItems[i].latitud, miPaseo.listaItems[i].longitud, miPaseo.listaItems[i].radio)){
+          // el audio esta creado. Si hay que reproducirlo se reproduce
+          // si el audio del paseo es el mismo, no hacemos nada
+          if (miPaseo.itemActivo!=i) //hemos cambiado de item activo
+          {
+            if (miPaseo.itemActivo >=0){
+              miPaseo.listaItems[miPaseo.itemActivo].audio.pause();
+              miPaseo.listaItems[miPaseo.itemActivo].bola.setOptions({fillColor:"#0000FF"});
+            }
+              
+            miPaseo.itemActivo=i;
+            miPaseo.listaItems[i].audio.playbackspeed=1;
+            miPaseo.listaItems[i].audio.currentTime = 0;
+            miPaseo.listaItems[i].audio.mute=false;
+            miPaseo.listaItems[i].audio.play();
+            miPaseo.listaItems[i].bola.setOptions({fillColor:"#00FF00"});
+          } // if hemos cambiado de item activo
+        } //if estamos dentro de un item
+      }// for cada item
+      // en cualquier caso, hay que actualizar la posición actual
+      miPaseo.bolaPosicionActual.setOptions({center:new google.maps.LatLng(latitud, longitud) });
+      
+    } //cambiaPosicion  
+    
+   
+  </script>
+</html>
