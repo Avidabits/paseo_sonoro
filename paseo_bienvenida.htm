@@ -1,0 +1,51 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+  <link rel="stylesheet" type="text/css" href="paseo_sonoro.css">
+  <title id="title">Bienvenido a Viavélez</title> <!--esto se sustituye con el título y la descripción de soundscape.rss-->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" /><!--para que no escalen los móviles-->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-27140304-2', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+    
+  </head>
+
+  <body>
+<table id="tabla">
+  <tr>
+    <td><img class="logo" src="logo_notours_screen.jpg"></td>
+    <!--td><p id="info_precarga">Minimiza el consumo de datos precargando el audio en una zona wifi</p></td-->
+    <!--td><button id="boton" onclick="cargaFicheros()" type="button" class="button">precargar audio</button></td-->
+  </tr>
+</table>      
+    <p id="lineaDepuracion">Información adicional</p>
+    <p id="mensaje_bienvenida">Bienvenidos a este paseo por la memoria de Viavélez<br>
+Al ir paseando por el pueblo se emitirán grabaciones sonoras de personas con memoria del pasado de Viavélez <br>
+Necesitarás tener puestos los auriculares mientras paseas<br>  
+Cuando pulses el botón <strong>"Pasear"</strong>, se pedirá permiso para activar la geolocalización GPS.<br> 
+A partir de ese momento, podrás empezar a pasear con varias personas que te contarán historias muy especiales
+  
+</p>
+    <a class="button" href="paseo_sonoro.htm">Pasear</a>
+    
+<p id="mensaje_despedida">Este paseo pertenece al proyecto <a href="https://viaveleztransmedia.wordpress.com/"> Viavélez Transmedia</a></p>
+  </body>
+  <script> <!-- Ya que estamos verificaremos que no hay problema de soporte a la geolocalizacion-->
+    
+    if(!navigator.geolocation)
+    {
+      // No se cuenta con soporte para geolocalización, manejar la situación.
+      alert("Lo siento, tu navegador no soporta geolocalización");
+      //TODO: esconder el boton de Empezamos.....
+
+    }  
+    </script>
+  
+</html>
