@@ -5,9 +5,10 @@ Implemento una aplicación web para disfrutar los paseos en móviles con distintos
 
 
 accesible en produccion:
-https://cdn.rawgit.com/Avidabits/paseo_sonoro/master/paseo_sonoro.htm
-http://tinyurl.com/viavelez-paseo-sonoro
+https://cdn.rawgit.com/Avidabits/paseo_sonoro/master/paseo_bienvenida.htm
+http://tinyurl.com/paseo-viavelez
 
 accesible en pruebas
-https://rawgit.com/Avidabits/paseo_sonoro/master/paseo_sonoro.htm
+https://rawgit.com/Avidabits/paseo_sonoro/master/paseo_bienvenida.htm
+
 

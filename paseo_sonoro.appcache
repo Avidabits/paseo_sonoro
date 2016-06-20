@@ -2,7 +2,6 @@ CACHE MANIFEST
 
 ## No sirve de nada cachear el audio
 CACHE:
-#sound/003_mama_bajaba_al_pe.mp3
 
 
 # Fallback content
